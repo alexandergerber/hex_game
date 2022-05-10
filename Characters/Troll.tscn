@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Classes/Characters.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Characters/troll.png" type="Texture" id=2]
+[ext_resource path="res://Characters/Troll.gd" type="Script" id=3]
+
+[node name="Troll" instance=ExtResource( 1 )]
+script = ExtResource( 3 )
+
+[node name="Sprite" parent="." index="2"]
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 2 )
+
+[node name="SelectionLine" parent="Sprite" index="0"]
+visible = false
+position = Vector2( 56.6667, -90 )
+scale = Vector2( 12.1667, 13 )
+points = PoolVector2Array( -6.57534, -1.02564, -4.38356, 2.05128, -2.19178, -1.02564 )
+width = 1.0
